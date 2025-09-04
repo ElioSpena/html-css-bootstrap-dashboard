@@ -12,6 +12,7 @@
 </head>
 
 <body>
+
     <!--HEADER-->
     <header class="bg-dark" data-bs-theme="dark">
         <nav class="navbar navbar-expand-lg container-fluid p-3">
@@ -49,7 +50,8 @@
                 </ul>
 
                 <form class="d-flex" role="search">
-                    <input class="bg-light form-control me-2" type="search" placeholder="Cerca..." aria-label="Search" />
+                    <input class="bg-light form-control me-2" type="search" placeholder="Cerca..."
+                        aria-label="Search" />
                     <button class="btn btn-outline-light" type="submit">Cerca</button>
                 </form>
 
@@ -59,12 +61,14 @@
     <!--/HEADER-->
 
     <main class="container mt-5">
+
         <div class="row row-cols-1">
+
             <!--LIST SECTION-->
 
             <section class="col col-lg-8">
 
-                <div class="row row-cols-2">
+                <div class="d-flex justify-content-between">
                     <h2>Catalogo Libri</h2>
                     <button class="btn btn-primary">Aggiungi libro</button>
                 </div>
@@ -75,7 +79,7 @@
                         <tr>
                             <th>Titolo</th>
                             <th>Stato</th>
-                            <th>Azioni</th>
+                            <th class="text-center">Azioni</th>
                         </tr>
                     </thead>
 
@@ -83,93 +87,194 @@
 
                         <tr>
                             <td>
-                                lorem
+                                I pilastri della terra
                             </td>
                             <td>
-                                lorem
+                                <span class="badge text-bg-success">Disponibile</span>
                             </td>
-                            <td>
-                                lorem
+
+                            <td class="d-flex justify-content-evenly">
+                                <a class="btn border p-1" href="">
+                                    <svg width="30" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                        <path
+                                            d="M100.4 417.2C104.5 402.6 112.2 389.3 123 378.5L304.2 197.3L338.1 163.4C354.7 180 389.4 214.7 442.1 267.4L476 301.3L442.1 335.2L260.9 516.4C250.2 527.1 236.8 534.9 222.2 539L94.4 574.6C86.1 576.9 77.1 574.6 71 568.4C64.9 562.2 62.6 553.3 64.9 545L100.4 417.2zM156 413.5C151.6 418.2 148.4 423.9 146.7 430.1L122.6 517L209.5 492.9C215.9 491.1 221.7 487.8 226.5 483.2L155.9 413.5zM510 267.4C493.4 250.8 458.7 216.1 406 163.4L372 129.5C398.5 103 413.4 88.1 416.9 84.6C430.4 71 448.8 63.4 468 63.4C487.2 63.4 505.6 71 519.1 84.6L554.8 120.3C568.4 133.9 576 152.3 576 171.4C576 190.5 568.4 209 554.8 222.5C551.3 226 536.4 240.9 509.9 267.4z" />
+                                    </svg>
+
+                                </a>
+                                <button class="btn border p-1 me-0">
+                                    <svg width="30" xmlns=" http://www.w3.org/2000/svg"
+                                        viewBox="0 0 640 640"><!--!Font Awesome Pro v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2025 Fonticons, Inc.-->
+                                        <path
+                                            d="M232.7 69.9L224 96L128 96C110.3 96 96 110.3 96 128C96 145.7 110.3 160 128 160L512 160C529.7 160 544 145.7 544 128C544 110.3 529.7 96 512 96L416 96L407.3 69.9C402.9 56.8 390.7 48 376.9 48L263.1 48C249.3 48 237.1 56.8 232.7 69.9zM512 208L128 208L149.1 531.1C150.7 556.4 171.7 576 197 576L443 576C468.3 576 489.3 556.4 490.9 531.1L512 208z" />
+                                    </svg>
+                                </button>
                             </td>
                         </tr>
 
                         <tr>
                             <td>
-                                lorem
+                                I promessi sposi
                             </td>
                             <td>
-                                lorem
+                                <span class="badge text-bg-success">Disponibile</span>
                             </td>
-                            <td>
-                                lorem
+                            <td class="d-flex justify-content-evenly">
+                                <a class="btn border p-1" href="">
+                                    <svg width="30" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                        <path
+                                            d="M100.4 417.2C104.5 402.6 112.2 389.3 123 378.5L304.2 197.3L338.1 163.4C354.7 180 389.4 214.7 442.1 267.4L476 301.3L442.1 335.2L260.9 516.4C250.2 527.1 236.8 534.9 222.2 539L94.4 574.6C86.1 576.9 77.1 574.6 71 568.4C64.9 562.2 62.6 553.3 64.9 545L100.4 417.2zM156 413.5C151.6 418.2 148.4 423.9 146.7 430.1L122.6 517L209.5 492.9C215.9 491.1 221.7 487.8 226.5 483.2L155.9 413.5zM510 267.4C493.4 250.8 458.7 216.1 406 163.4L372 129.5C398.5 103 413.4 88.1 416.9 84.6C430.4 71 448.8 63.4 468 63.4C487.2 63.4 505.6 71 519.1 84.6L554.8 120.3C568.4 133.9 576 152.3 576 171.4C576 190.5 568.4 209 554.8 222.5C551.3 226 536.4 240.9 509.9 267.4z" />
+                                    </svg>
+
+                                </a>
+                                <button class="btn border p-1 me-0">
+                                    <svg width="30" xmlns=" http://www.w3.org/2000/svg"
+                                        viewBox="0 0 640 640"><!--!Font Awesome Pro v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2025 Fonticons, Inc.-->
+                                        <path
+                                            d="M232.7 69.9L224 96L128 96C110.3 96 96 110.3 96 128C96 145.7 110.3 160 128 160L512 160C529.7 160 544 145.7 544 128C544 110.3 529.7 96 512 96L416 96L407.3 69.9C402.9 56.8 390.7 48 376.9 48L263.1 48C249.3 48 237.1 56.8 232.7 69.9zM512 208L128 208L149.1 531.1C150.7 556.4 171.7 576 197 576L443 576C468.3 576 489.3 556.4 490.9 531.1L512 208z" />
+                                    </svg>
+                                </button>
                             </td>
                         </tr>
 
                         <tr>
                             <td>
-                                lorem
+                                Il signore degli anelli
                             </td>
                             <td>
-                                lorem
+                                <span class="badge bg-warning">In prestito</span>
                             </td>
-                            <td>
-                                lorem
+                            <td class="d-flex justify-content-evenly">
+                                <a class="btn border p-1" href="">
+                                    <svg width="30" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                        <path
+                                            d="M100.4 417.2C104.5 402.6 112.2 389.3 123 378.5L304.2 197.3L338.1 163.4C354.7 180 389.4 214.7 442.1 267.4L476 301.3L442.1 335.2L260.9 516.4C250.2 527.1 236.8 534.9 222.2 539L94.4 574.6C86.1 576.9 77.1 574.6 71 568.4C64.9 562.2 62.6 553.3 64.9 545L100.4 417.2zM156 413.5C151.6 418.2 148.4 423.9 146.7 430.1L122.6 517L209.5 492.9C215.9 491.1 221.7 487.8 226.5 483.2L155.9 413.5zM510 267.4C493.4 250.8 458.7 216.1 406 163.4L372 129.5C398.5 103 413.4 88.1 416.9 84.6C430.4 71 448.8 63.4 468 63.4C487.2 63.4 505.6 71 519.1 84.6L554.8 120.3C568.4 133.9 576 152.3 576 171.4C576 190.5 568.4 209 554.8 222.5C551.3 226 536.4 240.9 509.9 267.4z" />
+                                    </svg>
+
+                                </a>
+                                <button class="btn border p-1 me-0">
+                                    <svg width="30" xmlns=" http://www.w3.org/2000/svg"
+                                        viewBox="0 0 640 640"><!--!Font Awesome Pro v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2025 Fonticons, Inc.-->
+                                        <path
+                                            d="M232.7 69.9L224 96L128 96C110.3 96 96 110.3 96 128C96 145.7 110.3 160 128 160L512 160C529.7 160 544 145.7 544 128C544 110.3 529.7 96 512 96L416 96L407.3 69.9C402.9 56.8 390.7 48 376.9 48L263.1 48C249.3 48 237.1 56.8 232.7 69.9zM512 208L128 208L149.1 531.1C150.7 556.4 171.7 576 197 576L443 576C468.3 576 489.3 556.4 490.9 531.1L512 208z" />
+                                    </svg>
+                                </button>
                             </td>
                         </tr>
 
                         <tr>
                             <td>
-                                lorem
+                                Il mondo di Sofia
                             </td>
                             <td>
-                                lorem
+                                <span class="badge bg-danger">Non disponibile</span>
                             </td>
-                            <td>
-                                lorem
+                            <td class="d-flex justify-content-evenly">
+                                <a class="btn border p-1" href="">
+                                    <svg width="30" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                        <path
+                                            d="M100.4 417.2C104.5 402.6 112.2 389.3 123 378.5L304.2 197.3L338.1 163.4C354.7 180 389.4 214.7 442.1 267.4L476 301.3L442.1 335.2L260.9 516.4C250.2 527.1 236.8 534.9 222.2 539L94.4 574.6C86.1 576.9 77.1 574.6 71 568.4C64.9 562.2 62.6 553.3 64.9 545L100.4 417.2zM156 413.5C151.6 418.2 148.4 423.9 146.7 430.1L122.6 517L209.5 492.9C215.9 491.1 221.7 487.8 226.5 483.2L155.9 413.5zM510 267.4C493.4 250.8 458.7 216.1 406 163.4L372 129.5C398.5 103 413.4 88.1 416.9 84.6C430.4 71 448.8 63.4 468 63.4C487.2 63.4 505.6 71 519.1 84.6L554.8 120.3C568.4 133.9 576 152.3 576 171.4C576 190.5 568.4 209 554.8 222.5C551.3 226 536.4 240.9 509.9 267.4z" />
+                                    </svg>
+
+                                </a>
+                                <button class="btn border p-1 me-0">
+                                    <svg width="30" xmlns=" http://www.w3.org/2000/svg"
+                                        viewBox="0 0 640 640"><!--!Font Awesome Pro v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2025 Fonticons, Inc.-->
+                                        <path
+                                            d="M232.7 69.9L224 96L128 96C110.3 96 96 110.3 96 128C96 145.7 110.3 160 128 160L512 160C529.7 160 544 145.7 544 128C544 110.3 529.7 96 512 96L416 96L407.3 69.9C402.9 56.8 390.7 48 376.9 48L263.1 48C249.3 48 237.1 56.8 232.7 69.9zM512 208L128 208L149.1 531.1C150.7 556.4 171.7 576 197 576L443 576C468.3 576 489.3 556.4 490.9 531.1L512 208z" />
+                                    </svg>
+                                </button>
                             </td>
                         </tr>
 
-                        <tr>
-                            <td>
-                                lorem
-                            </td>
-                            <td>
-                                lorem
-                            </td>
-                            <td>
-                                lorem
-                            </td>
-                        </tr>
 
                         <tr>
                             <td>
-                                lorem
+                                Le cronache di Narnia: il leone, la strega e l'armadio
                             </td>
                             <td>
-                                lorem
+                                <span class="badge bg-warning">In prestito</span>
                             </td>
-                            <td>
-                                lorem
+                            <td class="d-flex justify-content-evenly">
+                                <a class="btn border p-1" href="">
+                                    <svg width="30" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                        <path
+                                            d="M100.4 417.2C104.5 402.6 112.2 389.3 123 378.5L304.2 197.3L338.1 163.4C354.7 180 389.4 214.7 442.1 267.4L476 301.3L442.1 335.2L260.9 516.4C250.2 527.1 236.8 534.9 222.2 539L94.4 574.6C86.1 576.9 77.1 574.6 71 568.4C64.9 562.2 62.6 553.3 64.9 545L100.4 417.2zM156 413.5C151.6 418.2 148.4 423.9 146.7 430.1L122.6 517L209.5 492.9C215.9 491.1 221.7 487.8 226.5 483.2L155.9 413.5zM510 267.4C493.4 250.8 458.7 216.1 406 163.4L372 129.5C398.5 103 413.4 88.1 416.9 84.6C430.4 71 448.8 63.4 468 63.4C487.2 63.4 505.6 71 519.1 84.6L554.8 120.3C568.4 133.9 576 152.3 576 171.4C576 190.5 568.4 209 554.8 222.5C551.3 226 536.4 240.9 509.9 267.4z" />
+                                    </svg>
+
+                                </a>
+                                <button class="btn border p-1 me-0">
+                                    <svg width="30" xmlns=" http://www.w3.org/2000/svg"
+                                        viewBox="0 0 640 640"><!--!Font Awesome Pro v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2025 Fonticons, Inc.-->
+                                        <path
+                                            d="M232.7 69.9L224 96L128 96C110.3 96 96 110.3 96 128C96 145.7 110.3 160 128 160L512 160C529.7 160 544 145.7 544 128C544 110.3 529.7 96 512 96L416 96L407.3 69.9C402.9 56.8 390.7 48 376.9 48L263.1 48C249.3 48 237.1 56.8 232.7 69.9zM512 208L128 208L149.1 531.1C150.7 556.4 171.7 576 197 576L443 576C468.3 576 489.3 556.4 490.9 531.1L512 208z" />
+                                    </svg>
+                                </button>
                             </td>
                         </tr>
 
+
                         <tr>
                             <td>
-                                lorem
+                                Il piccolo principe
                             </td>
                             <td>
-                                lorem
+                                <span class="badge text-bg-success">Disponibile</span>
+                            </td>
+                            <td class="d-flex justify-content-evenly">
+                                <a class="btn border p-1" href="">
+                                    <svg width="30" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                        <path
+                                            d="M100.4 417.2C104.5 402.6 112.2 389.3 123 378.5L304.2 197.3L338.1 163.4C354.7 180 389.4 214.7 442.1 267.4L476 301.3L442.1 335.2L260.9 516.4C250.2 527.1 236.8 534.9 222.2 539L94.4 574.6C86.1 576.9 77.1 574.6 71 568.4C64.9 562.2 62.6 553.3 64.9 545L100.4 417.2zM156 413.5C151.6 418.2 148.4 423.9 146.7 430.1L122.6 517L209.5 492.9C215.9 491.1 221.7 487.8 226.5 483.2L155.9 413.5zM510 267.4C493.4 250.8 458.7 216.1 406 163.4L372 129.5C398.5 103 413.4 88.1 416.9 84.6C430.4 71 448.8 63.4 468 63.4C487.2 63.4 505.6 71 519.1 84.6L554.8 120.3C568.4 133.9 576 152.3 576 171.4C576 190.5 568.4 209 554.8 222.5C551.3 226 536.4 240.9 509.9 267.4z" />
+                                    </svg>
+
+                                </a>
+                                <button class="btn border p-1 me-0">
+                                    <svg width="30" xmlns=" http://www.w3.org/2000/svg"
+                                        viewBox="0 0 640 640"><!--!Font Awesome Pro v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2025 Fonticons, Inc.-->
+                                        <path
+                                            d="M232.7 69.9L224 96L128 96C110.3 96 96 110.3 96 128C96 145.7 110.3 160 128 160L512 160C529.7 160 544 145.7 544 128C544 110.3 529.7 96 512 96L416 96L407.3 69.9C402.9 56.8 390.7 48 376.9 48L263.1 48C249.3 48 237.1 56.8 232.7 69.9zM512 208L128 208L149.1 531.1C150.7 556.4 171.7 576 197 576L443 576C468.3 576 489.3 556.4 490.9 531.1L512 208z" />
+                                    </svg>
+                                </button>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td>
+                                La storia infinita
                             </td>
                             <td>
-                                lorem
+                                <span class="badge text-bg-success">Disponibile</span>
+                            </td>
+                            <td class="d-flex justify-content-evenly">
+                                <a class="btn border p-1" href="">
+                                    <svg width="30" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                        <path
+                                            d="M100.4 417.2C104.5 402.6 112.2 389.3 123 378.5L304.2 197.3L338.1 163.4C354.7 180 389.4 214.7 442.1 267.4L476 301.3L442.1 335.2L260.9 516.4C250.2 527.1 236.8 534.9 222.2 539L94.4 574.6C86.1 576.9 77.1 574.6 71 568.4C64.9 562.2 62.6 553.3 64.9 545L100.4 417.2zM156 413.5C151.6 418.2 148.4 423.9 146.7 430.1L122.6 517L209.5 492.9C215.9 491.1 221.7 487.8 226.5 483.2L155.9 413.5zM510 267.4C493.4 250.8 458.7 216.1 406 163.4L372 129.5C398.5 103 413.4 88.1 416.9 84.6C430.4 71 448.8 63.4 468 63.4C487.2 63.4 505.6 71 519.1 84.6L554.8 120.3C568.4 133.9 576 152.3 576 171.4C576 190.5 568.4 209 554.8 222.5C551.3 226 536.4 240.9 509.9 267.4z" />
+                                    </svg>
+
+                                </a>
+                                <button class="btn border p-1 me-0">
+                                    <svg width="30" xmlns=" http://www.w3.org/2000/svg"
+                                        viewBox="0 0 640 640"><!--!Font Awesome Pro v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2025 Fonticons, Inc.-->
+                                        <path
+                                            d="M232.7 69.9L224 96L128 96C110.3 96 96 110.3 96 128C96 145.7 110.3 160 128 160L512 160C529.7 160 544 145.7 544 128C544 110.3 529.7 96 512 96L416 96L407.3 69.9C402.9 56.8 390.7 48 376.9 48L263.1 48C249.3 48 237.1 56.8 232.7 69.9zM512 208L128 208L149.1 531.1C150.7 556.4 171.7 576 197 576L443 576C468.3 576 489.3 556.4 490.9 531.1L512 208z" />
+                                    </svg>
+                                </button>
                             </td>
                         </tr>
 
                     </tbody>
+
+
                 </table>
-
-
-
             </section>
 
             <!--/LIST SECTION-->
@@ -177,26 +282,36 @@
             <!-- NOTES E FAQS -->
             <section class="col col-lg-4">
 
-                <div class="card border-light mb-3">
-                    <div class="card-header">Header</div>
+                <!--NOTE-->
+                <div class="card border-gray mb-3">
+                    <div class="card-header">
+                        <h2>Todo</h2>
+                    </div>
                     <div class="card-body">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="checkDefault">
-                            <label class="form-check-label" for="checkDefault">
-                                Default checkbox
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="checkChecked" checked>
-                            <label class="form-check-label" for="checkChecked">
-                                Checked checkbox
-                            </label>
-                        </div>
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                                <label class="form-check-label" for="firstCheckbox">Chiamare segreteria</label>
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+                                <label class="form-check-label" for="secondCheckbox">Mandare avvisi prestiti </label>
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                                <label class="form-check-label" for="thirdCheckbox">Ordinare nuovi libri</label>
+                            </li>
+                        </ul>
                     </div>
                 </div>
+                <!--/NOTE-->
 
-                <div class="card border-light mb-3">
-                    <div class="card-header">Header</div>
+
+                <!--FAQ-->
+                <div class="card border-gray mb-3 mt-4">
+                    <div class="card-header">
+                        <h2>F.A.Q.</h2>
+                    </div>
                     <div class="card-body">
                         <div class="accordion" id="accordionExample">
                             <div class="accordion-item">
@@ -210,11 +325,16 @@
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <strong>This is the first item’s accordion body.</strong> It is shown by
-                                        default, until the collapse plugin adds the appropriate classes that we use to
-                                        style each element. These classes control the overall appearance, as well as the
-                                        showing and hiding via CSS transitions. You can modify any of this with custom
-                                        CSS or overriding our default variables. It’s also worth noting that just about
-                                        any HTML can go within the <code>.accordion-body</code>, though the transition
+                                        default, until the collapse plugin adds the appropriate classes that we
+                                        use to
+                                        style each element. These classes control the overall appearance, as
+                                        well as the
+                                        showing and hiding via CSS transitions. You can modify any of this with
+                                        custom
+                                        CSS or overriding our default variables. It’s also worth noting that
+                                        just about
+                                        any HTML can go within the <code>.accordion-body</code>, though the
+                                        transition
                                         does limit overflow.
                                     </div>
                                 </div>
@@ -229,12 +349,18 @@
                                 <div id="collapseTwo" class="accordion-collapse collapse"
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        <strong>This is the second item’s accordion body.</strong> It is hidden by
-                                        default, until the collapse plugin adds the appropriate classes that we use to
-                                        style each element. These classes control the overall appearance, as well as the
-                                        showing and hiding via CSS transitions. You can modify any of this with custom
-                                        CSS or overriding our default variables. It’s also worth noting that just about
-                                        any HTML can go within the <code>.accordion-body</code>, though the transition
+                                        <strong>This is the second item’s accordion body.</strong> It is hidden
+                                        by
+                                        default, until the collapse plugin adds the appropriate classes that we
+                                        use to
+                                        style each element. These classes control the overall appearance, as
+                                        well as the
+                                        showing and hiding via CSS transitions. You can modify any of this with
+                                        custom
+                                        CSS or overriding our default variables. It’s also worth noting that
+                                        just about
+                                        any HTML can go within the <code>.accordion-body</code>, though the
+                                        transition
                                         does limit overflow.
                                     </div>
                                 </div>
@@ -250,12 +376,18 @@
                                 <div id="collapseThree" class="accordion-collapse collapse"
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        <strong>This is the third item’s accordion body.</strong> It is hidden by
-                                        default, until the collapse plugin adds the appropriate classes that we use to
-                                        style each element. These classes control the overall appearance, as well as the
-                                        showing and hiding via CSS transitions. You can modify any of this with custom
-                                        CSS or overriding our default variables. It’s also worth noting that just about
-                                        any HTML can go within the <code>.accordion-body</code>, though the transition
+                                        <strong>This is the third item’s accordion body.</strong> It is hidden
+                                        by
+                                        default, until the collapse plugin adds the appropriate classes that we
+                                        use to
+                                        style each element. These classes control the overall appearance, as
+                                        well as the
+                                        showing and hiding via CSS transitions. You can modify any of this with
+                                        custom
+                                        CSS or overriding our default variables. It’s also worth noting that
+                                        just about
+                                        any HTML can go within the <code>.accordion-body</code>, though the
+                                        transition
                                         does limit overflow.
                                     </div>
                                 </div>
@@ -263,6 +395,7 @@
                         </div>
                     </div>
                 </div>
+                <!--/FAQ-->
 
             </section>
             <!-- /NOTES E FAQS -->
@@ -272,7 +405,9 @@
 
 
 
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
