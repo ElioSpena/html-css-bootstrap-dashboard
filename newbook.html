@@ -56,77 +56,102 @@
 
     <main class="container pt-4">
 
-        <h2>Nuovo Libro</h2>
+        <h1 class="pb-4">Nuovo Libro</h1>
 
-        <section class="row">
+        <!--Author Name and Surname-->
+        <form class="row">
 
-            <!--Author Name and Surname-->
-
-            <div class="col-6">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda qui, similique officiis ipsa
-                praesentium accusantium maxime ab laborum? Impedit at dolores neque. Doloremque velit modi natus
-                temporibus dolore, tempora expedita.
+            <div class="col-6 pb-4">
+                <label for="name-author" class="form-label fs-4">
+                    Nome Autore
+                </label>
+                <input type="text" class="form-control" id="name-author" placeholder="Inserisci il nome dell'autore">
             </div>
 
-            <div class="col-6"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda qui, similique
-                officiis ipsa
-                praesentium accusantium maxime ab laborum? Impedit at dolores neque. Doloremque velit modi natus
-                temporibus dolore, tempora expedita.
+            <div class="col-6 pb-4">
+                <label for="surname-author" class="form-label fs-4">
+                    Cognome Autore
+                </label>
+                <input type="text" class="form-control" id="surname-author"
+                    placeholder="Inserisci il cognome dell'autore">
             </div>
 
             <!--/Author Name and Surname-->
 
-            <!--Book title-->
-
-            <div class="col-12"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda qui, similique
-                officiis ipsa
-                praesentium accusantium maxime ab laborum? Impedit at dolores neque. Doloremque velit modi natus
-                temporibus dolore, tempora expedita.
-            </div>
-
-            <!--/Book title-->
-
             <!--Book description-->
 
-            <div class="col-12"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda qui, similique
-                officiis ipsa
-                praesentium accusantium maxime ab laborum? Impedit at dolores neque. Doloremque velit modi natus
-                temporibus dolore, tempora expedita.</div>
-            <div class="col-12"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda qui, similique
-                officiis ipsa
-                praesentium accusantium maxime ab laborum? Impedit at dolores neque. Doloremque velit modi natus
-                temporibus dolore, tempora expedita.</div>
-            <div class="col-12"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda qui, similique
-                officiis ipsa
-                praesentium accusantium maxime ab laborum? Impedit at dolores neque. Doloremque velit modi natus
-                temporibus dolore, tempora expedita.
+            <div class="col-12 pb-4">
+                <label for="book-title" class="form-label fs-4">
+                    Titolo
+                </label>
+                <input type="text" class="form-control" id="book-title" placeholder="Inserisci il titolo del libro">
+                <span class="form-text">Titolo versione italiana</span>
+            </div>
+
+            <div class="col-12 pb-4">
+                <label for="literary-genre" class="form-label fs-4">
+                    Genere
+                </label>
+                <select class="form-select" id="literary-genre">
+                    <option value="" disabled selected>Scegli il genere</option>
+                    <option value="sci-fi">Sci-Fi</option>
+                    <option value="fantasy">Fantasy</option>
+                    <option value="Comedy">Comedy</option>
+                    <option value="Novel">Novel</option>
+                </select>
+            </div>
+
+            <div class="col-12 pb-4">
+                <label for="date" class="form-label fs-4">
+                    Anno di pubblicazione
+                </label>
+                <input type="date" id="date" class="form-control">
+            </div>
+
+            <div class="col-12 pb-5 border-bottom">
+                <label for="isbn-code" class="form-label fs-4">
+                    ISBN#
+                </label>
+                <input type="number" class="form-control" id="isbn-code" placeholder="Inserisci il codice IBSN#">
             </div>
 
             <!--/Book description-->
 
             <!--Notes and add button-->
 
-            <div class="col-12"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda qui, similique
-                officiis ipsa
-                praesentium accusantium maxime ab laborum? Impedit at dolores neque. Doloremque velit modi natus
-                temporibus dolore, tempora expedita.
+            <div class="col-12 pb-4 pt-4">
+                <label for="notes" class="form-label fs-4">
+                    Note
+                </label>
+                <textarea maxlength="4" id="notes" class="form-control"
+                    placeholder="Inserisci eventuali note sul libro">
+                    </textarea>
+            </div>
+
+            <div class="col-12 pb-4">
+                <input class="form-check-input" type="checkbox" id="checkbox">
+                <label class="form-check-label" for="checkbox">
+                    Disponibile anche in digitale
+                </label>
+            </div>
+
+            <div class="pb-4">
+                <button href="" class="btn btn-primary">
+                    Aggiungi Libro
+                </button>
             </div>
 
             <!--/Notes and add button-->
-
-        </section>
-
-
+        </form>
 
     </main>
 
     <!--Bootstrap JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous">
-    </script>
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+        </script>
     <!--/Bootstrap JS-->
-    
+
 </body>
 
 </html>
